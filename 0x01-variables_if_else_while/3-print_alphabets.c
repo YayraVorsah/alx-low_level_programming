@@ -2,18 +2,18 @@
 
 /**
  * main - Entry point
- * Description: prints the alphabet in lowercase,
- * and then in uppercase, followed by a new line
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	char c = 'a';
 
-	for (i = 'a'; i <= 'z'; i++)
-		putchar(i);
-	for (i = 'A'; i <= 'Z'; i++)
-		putchar(i);
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
 	putchar('\n');
 
 	return (0);
